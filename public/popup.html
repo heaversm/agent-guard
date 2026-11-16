@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Agent Guard</title>
+<style>
+body{font:13px system-ui;width:520px;margin:0;padding:12px;color:#222}
+h1{font-size:15px;margin:0 0 6px} #slip{color:#555;margin-bottom:8px}
+.bar{display:flex;gap:6px;align-items:center;margin-bottom:8px} .bar span{margin-right:auto}
+ul{list-style:none;padding:0;margin:0;max-height:440px;overflow:auto}
+li{border-left:4px solid #3a3;padding:6px 8px;margin-bottom:6px;background:#f6f6f6;word-break:break-all}
+li.blocked{border-color:#c50042;background:#fdecef} .why{color:#555} .found{color:#c50042;margin-top:2px}
+</style></head>
+<body>
+<h1>Agent Guard · <span id="state"></span></h1>
+<div id="slip"></div>
+<div class="bar"><span id="count"></span><button id="toggle"></button><button id="clear">Clear</button><button id="export">Export log</button></div>
+<ul id="log"></ul>
+<script type="module" src="popup.js"></script>
+</body></html>

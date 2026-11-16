@@ -1,0 +1,17 @@
+{
+  "task": "Look up what a high ALT result means",
+  "allowedOrigins": [
+    "http://springfield-health.test:8080",
+    "http://medlookup.test:8081"
+  ],
+  "insideOrigins": [
+    "http://springfield-health.test:8080"
+  ],
+  "blockPersonalData": true,
+  "readOnly": false,
+  "labels": {
+    "http://springfield-health.test:8080": "Springfield Health Portal",
+    "http://medlookup.test:8081": "MedLookup"
+  },
+  "onPersonalData": "ask"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "agent-guard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent Guard: a Firefox extension that checks every request an agent makes against a permission slip, blocks personal data leaving, and keeps its own log.",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "build": "node lib/build.mjs",
+    "watch": "node lib/build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "portal": "node portal/server.mjs",
+    "demo": "node lib/build.mjs && node demo.mjs",
+    "agent": "node agent.mjs",
+    "rehearse": "node agent.mjs --rehearse",
+    "test": "node lib/build.mjs && node e2e/run.mjs --headless",
+    "accuracy": "node e2e/accuracy.mjs --headless"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.133.0",
+    "@huggingface/transformers": "4.3.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.3.0",
+    "@types/node": "26.6.2",
+    "esbuild": "0.28.2",
+    "puppeteer": "25.13.0",
+    "typescript": "7.0.2"
+  }
+}

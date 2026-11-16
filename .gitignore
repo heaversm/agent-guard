@@ -1,0 +1,8 @@
+node_modules/
+dist/
+artifacts/
+.env
+.DS_Store
+Icon?
+# A global "Icon?" rule also matches this folder, case-insensitively.
+!public/icons/
